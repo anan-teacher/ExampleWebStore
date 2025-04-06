@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS responsive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+ /*.navbar {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+    }
+	
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+</style>
+
+
+<body class="w3-black">
+
+<!--navbar-->
+<div class="w3-bar w3-light-grey w3-border  ">
+  <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i> Home </a>
+  
+  <a href="#" class="topnav-centered w3-bar-item w3-button w3-blue"> RPG </a>
+  <a href="#" class="topnav-centered w3-bar-item w3-button w3-blue"> FPS </a>
+  <a href="#" class="topnav-centered w3-bar-item w3-button w3-blue"> RTS </a>
+  
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-sign-in"></i> Login/Register </a>
+</div>
+
+<!--Title-->
+<div class="w3-container w3-center">
+	<h2>Wellcome to Gamecompany</h2>
+	<p>We belive in the best games for the best prices. We strive to make our customers happy.</p>
+
+	<div class="w3-container w3-hide-medium w3-hide-small">
+		<h1>Computer games</h1>
+	</div>
+
+	<div class="w3-container w3-hide-large w3-hide-small">
+		<h1>Tabet games</h1>
+	</div>
+
+	<div class="w3-container w3-hide-large w3-hide-medium">
+		<h1>Mobile games</h1>
+	</div>
+</div>
+
+
+<!--split site-->
+<div class="w3-cell-row w3-padding-bottom w3-center" style="width:80%;margin:auto;">
+
+<!--games:-->	
+	<div class="w3-container w3-cell w3-mobile">
+	  <div class="w3-card-4 w3-center" style="width:100%; max-width:400px">
+	  <h2>Cyber Ronin: Neo Rebellion</h2>
+		<img src="CyberRoninNeoRebellion.webp" alt="Cyber Ronin: Neo Rebellion" style="width:100%">
+		<div class="w3-container">
+		  <p>A cyber-samurai action RPG set in a neon-lit futuristic Japan. You play as a rogue AI Ronin, slicing through corporate overlords and uncovering secrets in a world where honor clashes with technology.</p>
+		<button class="w3-btn w3-gray" onClick="buyGame('Cyber Ronin: Neo Rebellion')">Buy now</button>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="w3-container w3-cell w3-mobile">
+	  <div class="w3-card-4 w3-center" style="width:100%; max-width:400px">
+	  <h2>Echoes of Elysium</h2>
+		<img src="EchoesofElysium.webp" alt="Echoes of Elysium" style="width:100%">
+		<div class="w3-container">
+		  <p>A breathtaking sci-fi adventure where players explore a lost alien world, uncovering remnants of an advanced civilization. Solve puzzles, decode forgotten languages, and decide the fate of the planet’s last survivors.</p>
+		<button class="w3-btn w3-gray" onClick="buyGame('Echoes of Elysium')">Buy now</button>
+		</div>
+	  </div>
+	</div>
+	
+	<div class="w3-container w3-cell  w3-mobile">
+	  <div class="w3-card-4 w3-center" style="width:100%; max-width:400px">
+	  <h2>Dungeon Drift</h2>
+		<img src="DungeonDrift.webp" alt="Dungeon Drift" style="width:100%">
+		<div class="w3-container">
+		  <p>A roguelike deck-building dungeon crawler where every move counts. Collect powerful artifacts, battle through procedurally generated realms, and manipulate time to alter your fate!</p>
+		  <button class="w3-btn w3-gray" onClick="buyGame('Dungeon Drift')">Buy now</button>
+		</div>
+	  </div>
+	</div>
+	
+</div>
+
+<footer style="position: fixed; bottom: 0;  width: 100%; ">
+  <p>Kontakt us: Email : Gamecompany@email.com Phone : 08 - 123 456 789</p>
+  <p>All image rights to : DALL·E 3</p>
+  
+</footer>
+
+<script>
+function buyGame(name) {
+  alert("You got: "+name);
+}
+</script>
+
+</body>
+</html>
